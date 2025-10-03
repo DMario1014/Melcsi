@@ -7,27 +7,177 @@ header{
     align-items: center;
 }
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 nav ul{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     gap: 10rem;
+    align-items: center;
 }
-nav a{
-    color: white;
+img{
+    width: 200px;
+    height: auto;
+}
+.lec{
+    position: relative;
+    color: rgb(247, 179, 255);
     text-decoration: none;
 }
-nav a:hover{
-    text-decoration: underline;
+.lec::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: pink;
+    transition: width 0.3s ease;
+}
+.lec:hover::after {
+  width: 100%;
 }
 
-#contact{
+
+
+.contact{
+    text-decoration:none;
+    background: linear-gradient(135deg, #e04aed, #feb47b);   
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;          
+    transition: transform 0.4s ease, background 1s ease;
     display: inline-block;
-    border: none;
-    border-radius: 25px;
+}
+.contact:hover{
+    background-color: blueviolet;
+    transform: scale(1.05);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10%;
+  background-color: #000000;
+  color: #fff;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-text h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.hero-text h3 span {
+  color: #bb00ff;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.buttons .btn {
+  background: #bb00ff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.buttons .btn:hover {
+  background: #ff00ff;
+}
+
+.buttons .btn-outline {
+  border: 2px solid #bb00ff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #bb00ff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.buttons .btn-outline:hover {
+  background: #bb00ff;
+  color: white;
+}
+
+.hero-image {
+  position: relative;
+  transition: 1s ease;
+}
+.hero-image:hover{
+    transform: scale(1.05);
+}
+
+.hero-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #bb00ff;
+  box-shadow: 0 0 30px #bb00ff;
+}
+
+.skills{
+    margin-top: 3rem;
+    text-align: center;
+    color: white;
+}
+.skills h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.skills-container{
+    display:flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem
+}
+.skill-card {
+  background: #22062b;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 250px; /* fix szélesség, de reszponzív */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.03); /* hover animáció */
+}
+
+.skill-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #bb00ff;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ddd;
 }
