@@ -20,9 +20,13 @@ nav ul{
     gap: 10rem;
     align-items: center;
 }
-img{
+.profile-picture{
     width: 200px;
     height: auto;
+}
+.logo-gif{
+  width: 200px;
+  height: auto;
 }
 .lec{
     position: relative;
@@ -180,4 +184,27 @@ img{
   font-size: 1rem;
   line-height: 1.5;
   color: #ddd;
+}
+.cp{
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.blender{
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.ps{
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px auto; 
 }
