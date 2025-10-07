@@ -33,7 +33,7 @@ nav ul{
 
 
 /*Desktop nézet*/
-@media (min-width: 1024px){
+@media (min-width: 1440px){
     header{
         background-color: black;
         color: white;
