@@ -1,74 +1,103 @@
+/*Mobile nézet*/
+
 header{
-    background-color: white;
-    color: black;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+
 }
+
 body{
-    background-color: white;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
 }
+
 nav ul{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 1.2rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    gap: 10rem;
-    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
 }
+
 .profile-picture{
-    width: 200px;
+    width: 100px;
     height: auto;
 }
 .logo-gif{
-  width: 200px;
-  height: auto;
-}
-
-.lec{
-  position: relative;
-  color: #5CA7FF;
-  text-decoration: none;
-  transition: color 0.4s ease;
-}
-.lec:hover{
-    color: #fc86db;
-    text-decoration: none;
-}
-.lec::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 2.1px;
-    background-color: #5CA7FF;
-    transition: width 0.3s ease, background-color 0.4s ease;
-}
-.lec:hover::after {
-  width: 100%;
-  background-color: #fc86db;
+    width:100px;
+    height: auto;
 }
 
 
+/*Desktop nézet*/
+@media (min-width: 1024px){
+    header{
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    body{
+        background-color: rgb(0, 0, 0);
+    }
+    nav ul{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 10rem;
+        align-items: center;
+    }
+    .profile-picture{
+        width: 200px;
+        height: auto;
+    }
+    .logo-gif{
+    width: 200px;
+    height: auto;
+    }
+    .lec{
+        position: relative;
+        color: rgb(247, 179, 255);
+        text-decoration: none;
+    }
+    .lec::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 2px;
+        background-color: pink;
+        transition: width 0.3s ease;
+    }
+    .lec:hover::after {
+    width: 100%;
+    }
 
-.contact{
-    text-decoration:none;
-    background: linear-gradient(to bottom, #fc86db, #5CA7FF);   
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;          
-    transition: transform 0.4s ease, background 1s ease;
-    display: inline-block;
-}
-.contact:hover{
-    background-color: blueviolet;
-    transform: scale(1.05);
-}
+
+
+    .contact{
+        text-decoration:none;
+        background: linear-gradient(135deg, #e04aed, #feb47b);   
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;          
+        transition: transform 0.4s ease, background 1s ease;
+        display: inline-block;
+    }
+    .contact:hover{
+        background-color: blueviolet;
+        transform: scale(1.05);
+    }
 
 .hero {
   font-family: Arial, Helvetica, sans-serif;
@@ -79,25 +108,39 @@ nav ul{
   color: #5CA7FF;
   padding: 100px, 5%;
 }
+    .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10%;
+    background-color: #000000;
+    color: #fff;
+    }
 
 .hero-text {
   max-width: 50%;
   margin: auto;
 }
+    .hero-text {
+    max-width: 50%;
+    }
 
-.hero-text h1 {
-  font-size: 3rem;
-  font-weight: 700;
-}
+    .hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    }
 
-.hero-text h3 {
-  font-size: 1.5rem;
-  margin: 10px 0;
-}
+    .hero-text h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    }
 
 .hero-text h3 span {
   color: #fc86db;
 }
+    .hero-text h3 span {
+    color: #bb00ff;
+    }
 
 .hero-text p {
   margin: 20px 0;
@@ -108,12 +151,63 @@ nav ul{
 .matricadiv{
   flex-shrink: 0;
 }
+    .hero-text p {
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #ccc;
+    }
+
+    .buttons .btn {
+    background: #bb00ff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    margin-right: 15px;
+    transition: 0.3s;
+    }
+
+    .buttons .btn:hover {
+    background: #ff00ff;
+    }
+
+    .buttons .btn-outline {
+    border: 2px solid #bb00ff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #bb00ff;
+    font-weight: 600;
+    transition: 0.3s;
+    }
+
+    .buttons .btn-outline:hover {
+    background: #bb00ff;
+    color: white;
+    }
 
 .matrica{
   width: 600px;
   height: auto;
   margin-left: -50px;
 }
+    .hero-image {
+    position: relative;
+    transition: 1s ease;
+    }
+    .hero-image:hover{
+        transform: scale(1.05);
+    }
+
+    .hero-image img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #bb00ff;
+    box-shadow: 0 0 30px #bb00ff;
+    }
 
 .skills{
   font-family: Arial, Helvetica, sans-serif;
@@ -127,34 +221,36 @@ nav ul{
     margin-bottom: 2rem;
     color: white;
 }
+    .skills{
+        margin-top: 3rem;
+        text-align: center;
+        color: white;
+    }
+    .skills h2{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: white;
+    }
 
-.skills-container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-bottom: 3rem
-}
-.skill-card {
-  background: linear-gradient(to bottom, #fc86db, #5CA7FF);   
-  padding: 1.5rem;
-  border-radius: 12px;
-  width: 130px;
-  height: 130px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-  transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* függőlegesen középre */
-  align-items: center;      /* vízszintesen középre */
-  text-align: center;
-  
-}
+    .skills-container{
+        display:flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-bottom: 3rem
+    }
+    .skill-card {
+    background: #22062b;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 250px; /* fix szélesség, de reszponzív */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+    }
 
-.skill-card:hover {
-  transform: translateY(-8px) scale(1.03); /* hover animáció */
-}
+    .skill-card:hover {
+    transform: translateY(-8px) scale(1.03); /* hover animáció */
+    }
 
 .skill-card h3 {
   font-family: Arial, Helvetica, sans-serif;
@@ -162,6 +258,11 @@ nav ul{
   margin-bottom: 0.5rem;
   color: white;
 }
+    .skill-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #bb00ff;
+    }
 
 
 .cp{
@@ -172,6 +273,18 @@ nav ul{
   margin: 0 auto 0px auto;
   margin-top: 20px;
 }
+    .skill-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ddd;
+    }
+    .cp{
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px auto;
+    }
 
 .blender{
   width: 150px;
@@ -180,12 +293,20 @@ nav ul{
   display: block;
   margin: 0 auto 0px auto;
 }
+    .blender{
+    width: 140px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px auto;
+    }
 
-.ps{
-  width: 40px;
-  height: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto 10px auto; 
+    .ps{
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px auto; 
+    }
 }
 
