@@ -56,10 +56,6 @@ nav ul{
         gap: 10rem;
         align-items: center;
     }
-    .profile-picture{
-        width: 200px;
-        height: auto;
-    }
     .logo-gif{
     width: 200px;
     height: auto;
