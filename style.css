@@ -1,5 +1,5 @@
 /*Mobile nézet*/
-
+/*
 header{
     background-color: black;
     color: white;
@@ -31,11 +31,11 @@ nav ul{
     height: auto;
 }
 
-
+*/
 /*Desktop nézet*/
 @media (min-width: 1440px){
     header{
-        background-color: black;
+        background-color: white;
         color: white;
         padding: 1rem;
         display: flex;
@@ -43,7 +43,7 @@ nav ul{
         align-items: center;
     }
     body{
-        background-color: rgb(0, 0, 0);
+        background-color: white;
     }
     nav ul{
         font-family: 'Poppins', sans-serif;
@@ -66,8 +66,9 @@ nav ul{
     }
     .lec{
         position: relative;
-        color: rgb(247, 179, 255);
+        color: black;
         text-decoration: none;
+        transition: 0.3s ease;
     }
     .lec::after{
         content: "";
@@ -76,18 +77,23 @@ nav ul{
         bottom: 0;
         width: 0%;
         height: 2px;
-        background-color: pink;
+        background-color: rgb(0, 0, 0);
         transition: width 0.3s ease;
     }
+    .lec:hover{
+        color: blue;
+    }
     .lec:hover::after {
+    background-color: blue;
     width: 100%;
+    transition: 0.3s ease;
     }
 
 
 
     .contact{
         text-decoration:none;
-        background: linear-gradient(135deg, #e04aed, #feb47b);   
+        background: linear-gradient(135deg, #0042d1, #65bdf8);   
         color: white;
         padding: 0.5rem 1rem;
         border-radius: 5px;          
@@ -113,11 +119,12 @@ nav ul{
     align-items: center;
     justify-content: space-between;
     padding: 100px 10%;
-    background-color: #000000;
+    background-color: white;
     color: #fff;
     }
 
 .hero-text {
+    color: black;
   max-width: 50%;
   margin: auto;
 }
@@ -139,7 +146,7 @@ nav ul{
   color: #fc86db;
 }
     .hero-text h3 span {
-    color: #bb00ff;
+    color: #0091ff;
     }
 
 .hero-text p {
@@ -157,35 +164,6 @@ nav ul{
     color: #ccc;
     }
 
-    .buttons .btn {
-    background: #bb00ff;
-    padding: 10px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    margin-right: 15px;
-    transition: 0.3s;
-    }
-
-    .buttons .btn:hover {
-    background: #ff00ff;
-    }
-
-    .buttons .btn-outline {
-    border: 2px solid #bb00ff;
-    padding: 10px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    color: #bb00ff;
-    font-weight: 600;
-    transition: 0.3s;
-    }
-
-    .buttons .btn-outline:hover {
-    background: #bb00ff;
-    color: white;
-    }
 
 .matrica{
   width: 600px;
@@ -213,24 +191,14 @@ nav ul{
   font-family: Arial, Helvetica, sans-serif;
     margin-top: 3rem;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .skills h2{
   font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: white;
+    color: rgb(0, 0, 0);
 }
-    .skills{
-        margin-top: 3rem;
-        text-align: center;
-        color: white;
-    }
-    .skills h2{
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        color: white;
-    }
 
     .skills-container{
         display:flex;
@@ -240,29 +208,26 @@ nav ul{
         margin-bottom: 3rem
     }
     .skill-card {
-    background: #22062b;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #0042d1, #65bdf8);   
     padding: 1.5rem;
     border-radius: 12px;
-    width: 250px; /* fix szélesség, de reszponzív */
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     transition: transform 0.3s ease;
     }
 
     .skill-card:hover {
-    transform: translateY(-8px) scale(1.03); /* hover animáció */
+    transform: translateY(-8px) scale(1.03); 
     }
 
 .skill-card h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   margin-bottom: 0.5rem;
-  color: white;
+  color: rgb(255, 255, 255);
 }
-    .skill-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    color: #bb00ff;
-    }
+
 
 
 .cp{
@@ -272,34 +237,20 @@ nav ul{
   display: block;
   margin: 0 auto 0px auto;
   margin-top: 20px;
+  justify-content: center;
 }
-    .skill-card p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #ddd;
-    }
-    .cp{
-    width: 40px;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 10px auto;
-    }
 
-.blender{
-  width: 150px;
+
+
+.ae{
+  width: 90px;
   height: auto;
   object-fit: contain;
   display: block;
   margin: 0 auto 0px auto;
+  justify-content: center;
 }
-    .blender{
-    width: 140px;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 10px auto;
-    }
+
 
     .ps{
     width: 40px;
